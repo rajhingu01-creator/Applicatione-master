@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Abecedex",
+    "slug": "Abecedex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Abecedex to access your camera for stories and posts.",
+        "NSMicrophoneUsageDescription": "Allow Abecedex to access your microphone for story videos.",
+        "NSPhotoLibraryUsageDescription": "Allow Abecedex to access your photos and videos for stories and posts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.anonymous.Abecedex"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "44ca2795-4726-4ef1-8714-bfc7038c041b"
+      }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Abecedex to access your camera for stories and posts.",
+          "microphonePermission": "Allow Abecedex to access your microphone for story videos.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Abecedex to access your photos and videos for stories and posts.",
+          "cameraPermission": "Allow Abecedex to access your camera for stories and posts.",
+          "microphonePermission": "Allow Abecedex to access your microphone for story videos."
+        }
+      ]
+    ]
+  }
+}
